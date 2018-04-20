@@ -1,0 +1,779 @@
+
+.container{
+	position: relative;
+	box-sizing: border-box;
+	width: 100vw;
+	overflow: hidden;
+/*	bottom: 50px;
+*/}
+
+
+
+/*box設計樣式*/
+.box{
+
+	width: 100%;
+	height: 100vh;
+
+
+}
+
+	 /* 字體表
+font-family: 'Caveat Brush', cursive;
+font-family: 'Permanent Marker', cursive;
+font-family: 'Merriweather Sans', sans-serif;
+--------------------------------------------
+Sacramento---詩字體
+*/
+	 /*解決底圖閃出來*/
+
+ .box {
+	 opacity: 0;
+ }
+/*測試上面的div設計*/
+
+body {
+	background: rgba(247, 247, 247, 1);
+	overflow-x: hidden;
+}
+
+.transitiontotop {
+	transition: all 5s ease-in-out;
+}
+
+.wrap {
+	position: relative;
+	margin: 0 auto;
+}
+
+p {
+	font-family: 'Merriweather Sans', sans-serif;
+}
+
+.article {
+	font-family: 'Permanent Marker', cursive;
+	font-size: 1.2em;
+	line-height: 1.5em;
+	opacity: .7;
+}
+
+.title {
+	font-size: 1.5em;
+	text-align: center;
+	text-decoration: line-through;
+	opacity: .7;
+}
+/*.box{
+min-height: 100vh;
+background: transparent;
+}*/
+/*測試上面的div設計*/
+/*--------------------------london start--------------------*/
+/*index*/
+
+.index {
+	/*配合CONTAINER width100vw;設定圖片隨瀏覽器縮小-------------*/
+	height: 100vh;
+	width: 100vw;
+	overflow: hidden;
+	background: url('../images/logo1.png')no-repeat 0 0;
+	/*url('images/logo_bk.jpg')no-repeat 0 0;*/
+	/*此效果可以設計出背景移動而已-------------*/
+	background-size: 100vw 100vh;
+	position: fixed;
+	top: 0;
+	left: 0;
+	/*此效果可以設計出背景移動而已-------------*/
+}
+
+.index_wrapper {
+	position: relative;
+}
+/*.uglogo{
+height: 3em;
+width: 3em;
+background: url('images/uglogo.png')no-repeat 0 0;
+background-size: cover;
+position: absolute;
+top:100px;
+left: 100px;
+box-sizing: border-box;
+z-index: 4;
+}*/
+
+.toplabel {
+	height: 6em;
+	width: 4em;
+	background: url('../images/ylabel_s.png')no-repeat 50% 0;
+	background-size: 100%;
+	position: absolute;
+	top: 0;
+	left: 80vw;
+	box-sizing: border-box;
+	z-index: 4;
+}
+
+.toplabel a {
+	display: inline-block;
+	box-sizing: border-box;
+	width: 120px;
+	padding: 5px 10px;
+	/*border:1px solid pink;*/
+	color: black;
+	text-decoration: line-through;
+	position: absolute;
+	left: -30px;
+	top: 50px;
+}
+/*--------------------------navebar2--------------------*/
+
+.nav2 {
+
+	/* margin: 0 auto; */
+	/* height: 100px; */
+	/*width: 100vw;*/
+
+	width: 90vw;  /*tablet尺寸*/
+	position: fixed;
+	top: 20px;
+	/* margin: 0 auto; */
+	/* right: 25%; */
+	z-index: 20;
+	/* left: 16%; */
+
+	display: flex;
+	opacity: 0;
+}
+
+ul{
+	display: flex;
+	width: 100%;
+	height: auto;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.nav2 ul li {
+	/*float: left;*/
+}
+
+.nav2 ul li a {
+	text-decoration: none;
+	float: left;
+	display: block;
+	/*width: 150px;*/
+	width: 130px;
+	padding: 5px 5px 20px 20px;
+	box-sizing: border-box;
+	/* 標籤貼紙   */
+	background: url('../images/ylabe2.png')no-repeat 0 0;
+	background-size: 50%;
+	font-family: 'Merriweather Sans', sans-serif;
+	color: black;
+	font-size: 1.2em;
+}
+
+.cab {
+	opacity: 0;
+}
+
+.cab img {
+	width: 30px;
+}
+
+.uglogo {
+	height: 3em;
+	width: 3em;
+	background: url('../images/uglogo.png')no-repeat 0 0;
+	background-size: cover;
+	position: fixed;
+	top: 60px;
+	left: 50px;
+	box-sizing: border-box;
+	z-index: 29;
+}
+/*----------------滾輪------------------------------------*/
+/*--------------------------index頁結束-------------------*/
+/*--------------------------index頁結束-------------------*/
+
+.wrap2 {
+	position: relative;
+	background: rgba(247, 247, 247, 1);
+	width: 80%;
+	margin: 0 auto;
+}
+
+.about {
+	height: 100vh;
+	width: 100%;
+	background: url('../images/papperbk2.png') no-repeat 50% 0, rgba(247, 247, 247, 1);
+	background-size: cover;
+	/*position: absolute;*/
+	/*top: 0px;*/
+	/*top:2068px;*/
+	z-index: 3;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+@keyframes ants {
+	to {
+		background-position: 100% 100%
+	}
+}
+
+.about section {
+	width: 80%;
+	padding: 10px;
+	/*border: 1px solid red;*/
+	/*height: 80vh;*/
+	/*position: absolute;*/
+	/*top: 100px;*/
+	/*left: 150px;*/
+	/*border: 3px solid rgba(0,0,0,.3);*/
+	/*box-shadow:inset 10px 10px 0 0 rgba(0,0,0,0.7);*/
+	/*background: url('images/papperbk2.png')repeat 50% 0,
+linear-gradient(white,white) padding-box,
+          repeating-linear-gradient(-45deg, black 0, black 25%,transparent 0, transparent 50%) 0 / .6em .6em;
+animation: ants 100s linear infinite;*/
+}
+/*--------------------------about頁結束-------------------*/
+/*--------------------------about頁結束-------------------*/
+
+.togo {
+
+	/* height: 100vh; */
+	width: 100%;
+	background: url('../images/map100.jpg')no-repeat 50% 0, rgba(247, 247, 247, 1);
+	background-size: cover;
+	/* border: 1px solid red; */
+	/* position: absolute; */
+	/* top: 100vh; */
+	/* top: 2068px; */
+	z-index: 3;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+}
+
+
+.map img {
+	height: 100vh;
+}
+
+.map {
+	width: 100%;
+	overflow: hidden;
+	position: absolute;
+	/*left:-120px;*/
+}
+/*----------------------photos1-------------------*/
+
+.photos1 {
+	width: 100%;
+	height: 50vh;
+	/*border: 2px solid yellow;*/
+	position: absolute;
+	top: 50px;
+	left: 20px;
+	padding: 100px 0;
+	box-sizing: border-box;
+}
+
+.photos1 div {
+	/*display: block;*/
+
+	margin-right: 120px;
+	border-radius: 50%;
+	/*background: teal;*/
+	overflow: hidden;
+	background-color: rgba(0, 0, 0, 0.8);
+	position: relative;
+	/*border: 1px solid pink;*/
+
+	/*0426*/
+	width: 300px;
+	height: 300px;
+
+}
+
+.photos1 div:nth-child(even) {
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.photos1 div:nth-child(1) {
+	margin-left: 140px;
+}
+
+.photos1 img {
+	width: 500px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 1;
+}
+
+/*.photos1 img:hover {*/
+	/*!*opacity: 1;*!*/
+	/*!*cursor: crosshair;*!*/
+/*}*/
+
+.goinfo p {
+	text-align: center;
+	line-height: 1.2em;
+	color: white;
+	z-index: 99;
+	margin-top: 100px;
+	font-size: 1.7em;
+	text-transform: uppercase;
+	font-weight: bold;
+	/*----------漸層字體做法------------------*/
+	/*----藍綠色-----*/
+	/* background: -webkit-linear-gradient(left, rgba(255,255,255,1) 50%, rgba(0,204,211,1) 50%);*/
+	/*----芥黃色-----*/
+	background: -webkit-linear-gradient(left, rgba(255, 255, 255, 1) 50%, rgba(239, 223, 0, 1) 50%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.photos2 {
+	width: 100%;
+	height: 50vh;
+	/*border: 2px solid teal;*/
+	position: absolute;
+	top: 50vh;
+	left: 0;
+	padding: 90px 0;
+	box-sizing: border-box;
+}
+
+.photos2 div {
+	display: block;
+	width: 20em;
+	height: 20em;
+	margin-right: 120px;
+	border-radius: 50%;
+	background: yellow;
+	float: left;
+	overflow: hidden;
+	background: rgba(0, 0, 0, 0.8);
+	position: relative;
+}
+
+.photos2 div:nth-child(even) {
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.photos2 div:nth-child(1) {
+	margin-left: 380px;
+}
+
+.photos2 img {
+	width: 500px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+}
+
+/*.photos2 img:hover {*/
+	/*opacity: 1;*/
+	/*cursor: crosshair;*/
+/*}*/
+/*--------------------------togo頁結束-------------------*/
+/*--------------------------togo頁結束-------------------*/
+
+.tosee {
+	height: 110vh;
+	width: 100%;
+	/* border: 1px solid red;*/
+	/*position: absolute;*/
+	/*top: 200vh;*/
+	/*top:2068px;*/
+	z-index: 3;
+}
+
+.container3 {
+	position: relative;
+	width: 100%;
+}
+
+.wrap3 {
+	position: relative;
+	background: rgba(247, 247, 247, 1);
+	width:100vw;
+	overflow-x: hidden;
+	height: 100vh;
+	margin: 0 auto;
+	/*top: 200vh;*/
+}
+
+.fun {
+	height: 100vh;
+	width: 100%;
+	/*overflow: hidden;*/
+	background: url('../images/papperbk2.png') no-repeat 50% 0, rgba(247, 247, 247, 1);
+	background-size: cover;
+	/*border: 1px solid red;        */
+	position: absolute;
+	top: 0;
+	/*top:2068px;*/
+	z-index: 3;
+
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+}
+
+.queen_bt_wrap{
+
+	position: fixed;
+	right: 5px;
+	bottom: 25px;
+	z-index: 20000;
+
+}
+
+.queen {
+	position: fixed;
+	right: 5px;
+	bottom: 25px;
+	z-index: 3;
+	cursor: pointer;
+	z-index: 900;
+}
+
+.queen img {
+	width: 150px;
+	height: 150px;
+}
+
+.queen p {
+	position: fixed;
+	right: 60px;
+	bottom: 185px;
+	z-index: 3;
+	font-family: 'Permanent Marker', cursive;
+	font-size: 1.4em;
+	line-height: 1.4em;
+	opacity: .7;
+	color: #000000;
+}
+
+.phone {
+	position: absolute;
+	top: 200px;
+	left: 7%;
+	z-index: -1;
+	transform: rotate(-25deg);
+}
+
+.phone img {
+	height: 400px;
+	z-index: 99;
+}
+
+.appsize {
+	width: 300px;
+	height: 500px;
+	box-sizing: border-box;
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	left: 10px;
+}
+
+.appinfo {
+	position: absolute;
+	top: 0;
+	left: -20px;
+	z-index: -2;
+}
+
+.appinfo img {
+	transform: scale(.65);
+}
+
+.write {
+	width: 330px;
+	/* height: 300px; */
+	/* background: pink; */
+	/* border: 1px solid red; */
+	position: absolute;
+	top: 300px;
+	left: 50vw;
+}
+
+.appbutton {
+	/*max-width: 1000px;*/
+	/*width: 1000px;*/
+	/*height: 600px;*/
+	/*!* top: 100vh; *!*/
+	/*!* left: 20px; *!*/
+	/*box-sizing: border-box;*/
+	position: relative;
+	z-index: 30;
+	/**/
+
+
+	/*display: flex;*/
+	/*align-content: flex-start;*/
+	/*justify-content: center;*/
+	/*flex-wrap: wrap;*/
+
+	/*綠色border看位置*/
+	/*border: 10px solid teal;*/
+}
+
+.appdetail {
+	width: 4em;
+	height: 4em;
+	border-radius: 50%;
+	/* background: teal; */
+	z-index: 99;
+	overflow: hidden;
+	transform: scale(.8);
+	padding: 1em;
+	border: 5px solid transparent;
+	background: linear-gradient(white, white) padding-box, repeating-linear-gradient(-45deg, black 0, black 25%, transparent 0, transparent 50%) 0 / .6em .6em;
+	animation: ants 12s linear infinite;
+	cursor: pointer;
+}
+
+.appdetail img {
+	transform: scale(0.46);
+	margin-top: -115px;
+	margin-left: -111px;
+}
+
+
+#timeout_bt {
+	/*position: absolute;*/
+	/*left: 450px;*/
+	/*top: 200px;*/
+}
+
+#citymapper_bt {
+	/*position: absolute;*/
+	/*left: 550px;*/
+	/*top: 400px;*/
+}
+
+#zomato_bt {
+	/*position: absolute;*/
+	/*left: 475px;*/
+	/*top: 600px;*/
+}
+
+.timeout img {
+	opacity: 1;
+}
+/*畫線動態樣式要放最下面喔*/
+
+.path3 {
+	stroke-dasharray: 5000;
+	stroke-dashoffset: 5000;
+	animation: dash 5s ease-in-out infinite backwards;
+	transform: scale(3.2);
+	position: absolute;
+	top: 200px;
+	left: -500px;
+	opacity: .7;
+	z-index: -3;
+}
+
+.path2 {
+	/*stroke-dasharray: 2100;
+  stroke-dashoffset: 2100;
+  animation: dash 5s ease-in-out infinite backwards;*/
+	position: absolute;
+	left: -250px;
+}
+
+@keyframes dash {
+	to {
+		fill: #fff;
+		stroke-dashoffset: 0;
+	}
+}
+/*畫線動態樣式要放最下面喔*/
+@keyframes ants {
+	to {
+		background-position: 100% 100%
+	}
+}
+
+.flexbox{
+	display: flex;}
+
+
+.circlephoto_wrap{
+	margin:20px 20px;
+}
+
+.circlephoto{
+	width: 250px;
+	height: 250px;
+	border-radius: 50%;
+	overflow: hidden;
+	/* background-color: rgba(0, 0, 0, 0.8); */
+	position: relative;
+	border: 1px solid pink;
+	position: relative;
+	z-index: 3;
+}
+
+.circlephoto img{
+	height: 100%;
+	opacity: 1;
+	cursor: crosshair;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+}
+
+.circlephoto h3, .circlephoto p{
+	text-align: center;
+	line-height: 40px;
+	color: white;
+
+	position: relative;
+	z-index: 20;
+
+	/*margin-top: 100px;*/
+	font-size: 20px;
+	text-transform: uppercase;
+	font-weight: bold;
+	/*----------漸層字體做法------------------*/
+	/*----藍綠色-----*/
+	/* background: -webkit-linear-gradient(left, rgba(255,255,255,1) 50%, rgba(0,204,211,1) 50%);*/
+	/*----芥黃色-----*/
+	background: -webkit-linear-gradient(left, rgba(255, 255, 255, 1) 50%, rgba(239, 223, 0, 1) 50%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.circlephoto p{
+	display: none;
+}
+
+.circlephoto content{
+	display: block;
+	margin-top: 70px;
+}
+
+
+/*.circlephoto_wrap a :hover img {*/
+	/*opacity: 1;*/
+	/*cursor: crosshair;*/
+	/*position: absolute;*/
+	/*top: 0px;*/
+	/*left: 0;*/
+/*}*/
+
+.appinfo_title h2{
+	font-size: 2em;
+	display: block;
+	/* width: 200px; */
+	font-family: monospace;
+	font-family: 'Permanent Marker', cursive;
+	/*position: absolute;*/
+	/* top: 100px; */
+	/* left: 50px; */
+	/* margin: 0 auto; */
+	text-align: center;
+	margin-top: 40px;
+	/* transform: rotate(-5deg); */
+	transform-origin: center;
+	z-index: 20;
+}
+
+.appintro1{
+	/*position: absolute;*/
+	/*left: 620px;*/
+	/*top: 275px;*/
+	display: block;
+	padding: 5px 5px;
+	background-color: #dfdf12;
+	/* margin-left: -30px; */
+	margin-top: -10px;
+	font-size: 1em;
+}
+.appintro2{
+
+	/*position: absolute;*/
+	/*left: 720px;*/
+	/*top: 490px;*/
+	display: block;
+	padding: 5px 5px;
+	background-color: #dfdf12;
+	/* margin-left: -30px; */
+	margin-top: -10px;
+	font-size: 1em;
+
+}
+
+.appintro3{
+	/*position: absolute;*/
+	/*left: 645px;*/
+	/*top: 685px;*/
+	display: block;
+	padding: 5px 5px;
+	background-color: #dfdf12;
+	/* margin-left: -30px; */
+	margin-top: -10px;
+	font-size: 1em;
+}
+
+.bt_wrap{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+}
+
+.timeout_bt_wrap{
+	margin-right: 0px;}
+
+.citymapper_bt_wrap{
+	margin-right: 0px;}
+
+.zomato_bt_wrap{
+	margin-right: 0px;}
+/*--------*/
+
+#parallax_photo_wrap {display: none;}
+.container2{
+	position: relative;
+	/*top: 100vh;*/
+	background: rgba(247, 247, 247, 1);
+}
+div.parallax-mirror{
+	display: none;
+}
+.phone_show_index{
+	display: block;
+	height: 100vh;
+	width: 100vw;
+}
+.phone_show_index img{
+	width: 100%;
+	position: relative;
+	top: 10vh;
+}
+
+.container3{
+	background: rgba(247, 247, 247, 1);
+}
+.toplabel{
+	left: 70vw;;
+	display: none;
+}
+.index{
+	height: 2em;
+	position: relative;
+}
